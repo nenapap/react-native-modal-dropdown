@@ -237,7 +237,7 @@ export default class ModalDropdown extends Component {
     }
 
     if (this.props.adjustFrame) {
-      style = this.props.adjustFrame(style) || style;
+      style = this.props.adjustFrame(style, showInBottom) || style;
     }
 
     return style;
