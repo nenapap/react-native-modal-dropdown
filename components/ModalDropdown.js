@@ -266,6 +266,7 @@ export default class ModalDropdown extends Component {
   _renderDropdown() {
     return (
       <ListView scrollEnabled={this.props.scrollEnabled}
+                bounces={false}
                 style={styles.list}
                 dataSource={this._dataSource}
                 renderRow={this._renderRow.bind(this)}
